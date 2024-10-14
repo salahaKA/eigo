@@ -1,0 +1,30 @@
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+  min-height: 100vh;
+}
+
+.auth-container .wrapper {
+  min-width: 320px;
+  text-align: center;
+  padding: 32px;
+  border-radius: 16px;
+  background: white;
+}
+
+.auth-brand {
+  margin-bottom: 24px;
+}
+
+.auth-brand img {
+  max-width: 120px;
+}
+
+.auth-button {
+  width: 100%;
+  border-radius: 8px;
+  height: 48px;
+  margin: 24px 0;
+}

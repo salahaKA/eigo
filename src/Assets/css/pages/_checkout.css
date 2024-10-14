@@ -1,0 +1,189 @@
+.checkout-page {
+  min-height: calc(100vh - 120px);
+  margin-top: 100px;
+}
+
+.checkout-page .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+}
+
+.checkout-page .order-details {
+  flex-grow: 1;
+}
+
+.checkout-page .order-summary {
+  flex-basis: 300px;
+}
+
+.timeline {
+  text-align: center;
+}
+
+.timeline li {
+  display: inline-block;
+  width: 120px;
+  cursor: pointer;
+  position: relative;
+}
+
+.timeline li:after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: #cccccc; /* Example gray color for $gray-eighty */
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  z-index: -1;
+}
+
+.timeline li:first-child:after {
+  width: 60px;
+  left: 60px;
+}
+
+.timeline li:last-child:after {
+  width: 60px;
+}
+
+.timeline li h2 {
+  padding: 16px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #999999; /* Example light gray color for $gray-light */
+}
+
+.timeline li i {
+  font-size: 24px;
+  color: #b3b3b3; /* Example lighter gray for lighten($gray-eighty, 10) */
+  border-radius: 15px;
+  background: #ffffff; /* White background */
+  border: 2px solid #cccccc; /* Example gray border */
+}
+
+.timeline li.done {
+  color: #008000; /* Example green for lighten($primary-green, 0) */
+}
+
+.timeline li.done i,
+.timeline li.done h2 {
+  color: #008000; /* Green color for completed steps */
+}
+
+.timeline li.active {
+  color: #00b300; /* Slightly lighter green for lighten($primary-green, 15) */
+}
+
+.timeline li.active i,
+.timeline li.active h2 {
+  color: #00b300; /* Active step color */
+}
+
+.order-details {
+  padding: 24px;
+  background: #ffffff; /* White background for order details */
+  margin: 24px 24px 24px 0;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.detail-container {
+  margin-top: 24px;
+}
+
+.detail-container h2 {
+  margin: 32px 0;
+  text-align: center;
+}
+
+.detail-container .auth-message {
+  text-align: center;
+  padding: 48px 24px;
+  border: 1px solid #fff;
+  background: #f0f0f0; /* Example light gray for $gray-light-bg */
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.detail-container .auth-message p {
+  margin-bottom: 24px;
+}
+
+.detail-container .auth-message p span {
+  padding: 4px;
+  background: #666666; /* Example dark gray for $gray-dark-bg */
+  border-radius: 4px;
+}
+
+.detail-container .auth-message button {
+  background: transparent;
+  color: #008000; /* Green for $primary-green */
+  border: 1px solid #008000; /* Green border for button */
+  border-radius: 8px;
+}
+
+.detail-container .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-container .actions button {
+  border-radius: 8px;
+  height: 48px;
+}
+
+.detail-container .actions button i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.detail-container .actions button:first-child {
+  background-color: transparent;
+  color: #008000; /* Green for $primary-green */
+}
+
+.detail-container .actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.order-summary {
+  padding: 24px;
+  background: #ffffff; /* White background */
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.order-summary h2 {
+  padding: 16px;
+}
+
+.order-summary h2 span {
+  color: #999999; /* Light gray for $gray-light */
+  font-weight: normal;
+}
+
+.order-summary .cart-items {
+  width: 300px;
+  max-height: 256px;
+  overflow-y: auto;
+}
+
+.order-summary .total-breakup {
+  border-top: 1px solid #666666; /* Dark gray border for $gray-dark-bg */
+  padding-top: 24px;
+  margin-top: 16px;
+}
+
+.order-summary .total-breakup li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.order-summary .total-breakup li h2 {
+  padding: 16px 0;
+}
