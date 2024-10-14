@@ -11,7 +11,7 @@ import CommonLayout from "./Layouts/CommonLayout";
 import AuthPage from "./Pages/auth";
 import HomePage from "./Pages/home";
 import CheckoutPage from "./Pages/checkout";
-
+import "./Assets/css/style.css"
 function App() {
   return (
     <AuthProvider>

@@ -34,8 +34,9 @@ const Header = (props) => {
           <Link to="/">
             <img
               className="logo"
-              src="https://res.cloudinary.com/sivadass/image/upload/v1493547373/dummy-logo/Veggy.png"
-              alt="Veggy Brand Logo"
+              // src="https://res.cloudinary.com/sivadass/image/upload/v1493547373/dummy-logo/Veggy.png"
+              src={`${process.env.PUBLIC_URL}/eigo.jpg`}
+              alt="Eigo Brand Logo"
             />
           </Link>
         </div>

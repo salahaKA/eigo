@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
       </p>
       <p>
-        &copy; {currentYear} <strong>Veggy</strong> - Organic Green Store
+        &copy; {currentYear} <strong>Eigo</strong> - Online Shopping Store
       </p>
     </footer>
   );

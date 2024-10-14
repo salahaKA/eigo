@@ -1,3 +1,4 @@
-@import "_variables.css";
-@import "_reset.css";
-@import "_icons.css";
+
+@import url("_variables.css");
+@import url("_reset.css");
+@import url("_icons.css");
