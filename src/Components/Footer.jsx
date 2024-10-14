@@ -5,27 +5,29 @@ const Footer = () => {
   return (
     <footer>
       <p className="footer-links">
+      <a href="https://www.instagram.com/eigo_shopping/" target="_blank">
+          Instagram
+        </a>
+        <span> / </span>
         <a
-          href="https://github.com/sivadass/react-shopping-cart"
+          href="https://github.com/salahaKA/eigo_shoppingweb.git"
           target="_blank"
         >
           View Source on Github
         </a>
         <span> / </span>
-        <a href="mailto:contact@sivadass.in" target="_blank">
+        <a href="mailto:codestudy475@gmail.com" target="_blank">
           Need any help?
         </a>
+        
+        
         <span> / </span>
-        <a href="https://twitter.com/NSivadass" target="_blank">
-          Say Hi on Twitter
-        </a>
-        <span> / </span>
-        <a href="https://sivadass.in" target="_blank">
+        <a href="https://www.instagram.com/eigo_shopping/" target="_blank">
           Read My Blog
         </a>
       </p>
       <p>
-        &copy; {currentYear} <strong>Eigo</strong> - Online Shopping Store
+        &copy; {currentYear} <strong>Eigo</strong> - Online Shopping Store - Designed by Kadeejath Salaha
       </p>
     </footer>
   );

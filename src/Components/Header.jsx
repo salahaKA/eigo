@@ -34,7 +34,7 @@ const Header = (props) => {
           <Link to="/">
             <img
               className="logo"
-              // src="https://res.cloudinary.com/sivadass/image/upload/v1493547373/dummy-logo/Veggy.png"
+              
               src={`${process.env.PUBLIC_URL}/eigo.jpg`}
               alt="Eigo Brand Logo"
             />
@@ -65,7 +65,7 @@ const Header = (props) => {
             </a>
             <input
               type="search"
-              placeholder="Search for Vegetables and Fruits"
+              placeholder="Search for eigo products"
               className="search-keyword"
               onChange={handleSearchInput}
             />

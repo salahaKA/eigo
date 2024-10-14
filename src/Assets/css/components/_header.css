@@ -12,9 +12,10 @@ header {
 
 header .container {
   display: flex;
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   padding: 0 32px;
+  max-height: 70px;
 }
 
 @media (max-width: 991px) {
@@ -46,7 +47,11 @@ header .container {
 
 /* Logo */
 .brand .logo {
-  width: 123px;
+  width: 100px;
+  height: 100px;
+  padding-left: 0px;
+  padding-top: 0px;
+  
 }
 
 @media (max-width: 480px) {
@@ -98,7 +103,7 @@ header .container {
 
 .search-keyword {
   height: 36px;
-  border: 1px solid #00a651; /* Replace $primary-green with the actual color code */
+  border: 1px solid #93860d; /* Replace $primary-green with the actual color code */
   padding: 0 16px;
   border-radius: 2px 0 0 2px;
   width: 100%;
@@ -118,7 +123,7 @@ header .container {
 
 .search-button {
   border-radius: 0 2px 2px 0;
-  background: #00a651 url(https://res.cloudinary.com/sivadass/image/upload/v1494692031/icons/search.png) center no-repeat; /* Replace $primary-green */
+  background: #93860d url(https://res.cloudinary.com/sivadass/image/upload/v1494692031/icons/search.png) center no-repeat; /* Replace $primary-green */
   width: 96px;
 }
 
@@ -173,7 +178,7 @@ header .container {
 
 .cart-info table {
   font-size: 14px;
-  color: #00a651; /* Replace $primary-green */
+  color: #93860d; /* Replace $primary-green */
   text-align: right;
 }
 
@@ -280,7 +285,7 @@ header .container {
 }
 
 .action-block button {
-  background: #ff6f00; /* Replace $primary-orange */
+  background: #ff0022; /* Replace $primary-orange */
   display: block;
   width: 100%;
 }

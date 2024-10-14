@@ -18,12 +18,12 @@ body {
 }
 
 ::selection {
-  background: #077915; /* $primary-green */
+  background: #93860d; /* $primary-green */
   color: #fff; /* $white */
 }
 
 ::-moz-selection {
-  background: #077915; /* $primary-green */
+  background: #93860d; /* $primary-green */
   color: #fff; /* $white */
   text-shadow: none;
 }
@@ -52,7 +52,7 @@ strong {
 
 a {
   text-decoration: none;
-  color: #077915; /* $primary-green */
+  color: #93860d; /* $primary-green */
 }
 
 h1,
@@ -74,7 +74,7 @@ button {
   border-radius: 2px;
   text-align: center;
   color: #fff; /* $white */
-  background: #077915; /* $primary-green */
+  background: #93860d; /* $primary-green */
   border: 0;
   font-weight: 400;
   padding: 0 16px;
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-  background: lighten(#077915, 10%);
+  background: lighten(#93860d, 10%);
 }
 
 button:focus {
@@ -92,7 +92,7 @@ button:focus {
 }
 
 button:active {
-  background: lighten(#077915, 15%);
+  background: lighten(#93860d, 15%);
 }
 
 button.block {
