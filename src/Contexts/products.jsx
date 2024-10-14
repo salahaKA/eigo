@@ -52,8 +52,8 @@ export const getProducts = (dispatch) => {
   dispatch({
     type: "GET_PRODUCTS_REQUEST"
   });
-  const url =
-    "https://res.cloudinary.com/sivadass/raw/upload/v1535817394/json/products.json";
+  // 
+  const url = `${process.env.PUBLIC_URL}/products.json`; // Local JSON file path
   axios
     .get(url)
     .then((response) => {

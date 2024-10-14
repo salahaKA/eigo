@@ -1,0 +1,213 @@
+[
+    {
+      "id": 1,
+      "name": "Floral Maxi Dress",
+      "price": 1499,
+      "discount": 10,
+      "final_price": 1349,
+      "image": "https://images.meesho.com/images/products/218460447/fvpar_1200.jpg",
+      "category": "dresses",
+      "size": ["S", "M", "L", "XL"],
+      "color": "Multicolor",
+      "brand": "Fashionista",
+      "description": "A flowy floral maxi dress with a flattering neckline, perfect for summer events.",
+      "stock": 25,
+      "rating": 4.5,
+      "reviews": [
+        {
+          "user": "Jane Doe",
+          "comment": "Beautiful dress! The fabric is soft, and it fits perfectly.",
+          "rating": 5
+        },
+        {
+          "user": "Emily White",
+          "comment": "Loved the design but the color was slightly different from the picture.",
+          "rating": 4
+        }
+      ],
+      "materials": ["Cotton", "Polyester"],
+      "care_instructions": "Machine wash cold with like colors."
+    },
+    {
+      "id": 2,
+      "name": "Denim Jacket",
+      "price": 2199,
+      "discount": 15,
+      "final_price": 1869,
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRrrDNGGk73Te6u9TVSX-F-w9cV2nOOlpu87--bMTFUJ4arOCC-smlOjA9yAt83AgQJJkEMnauxoZ9WOZWeGz7qUgY1oOjkcQ-03t6jzGBw1HtEdXtEnwk6uz8",
+      "category": "jackets",
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "color": "Blue",
+      "brand": "Trendsetter",
+      "description": "A versatile denim jacket that adds a trendy edge to any outfit.",
+      "stock": 15,
+      "rating": 4.8,
+      "reviews": [
+        {
+          "user": "Sophia Brown",
+          "comment": "Great jacket! It’s my go-to for casual wear.",
+          "rating": 5
+        }
+      ],
+      "materials": ["Denim", "Cotton"],
+      "care_instructions": "Dry clean only."
+    },
+    {
+      "id": 3,
+      "name": "Loosy Jeans",
+      "price": 1299,
+      "discount": 20,
+      "final_price": 1039,
+      "image": "https://images.meesho.com/images/products/313719770/6dqxg_1200.jpg",
+      "category": "jeans",
+      "size": ["28", "30", "32", "34", "36"],
+      "color": "Dark Blue",
+      "brand": "Denim Co.",
+      "description": "Trendy loosy jeans that hug your body for a sleek look.",
+      "stock": 40,
+      "rating": 4.3,
+      "reviews": [
+        {
+          "user": "Maria Green",
+          "comment": "Fits really well! Great value for money.",
+          "rating": 4
+        },
+        {
+          "user": "Lily Johnson",
+          "comment": "Comfortable jeans but they run a little small.",
+          "rating": 3.5
+        }
+      ],
+      "materials": ["Denim", "Spandex"],
+      "care_instructions": "Machine wash warm, tumble dry low."
+    },
+    {
+      "id": 4,
+      "name": "Crepe Top",
+      "price": 3299,
+      "discount": 5,
+      "final_price": 3134,
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSWpClTx2a2nXWz8cOEHCqTbfKzVE7uvdFh5F9ydz2o7Mmbn5jRm7Rd-NqOsG3CtSSgYR7vW-RUutRyF4rJusUrtl_5fBjJtvGcz0C6t1ZX2iRIR_xjrUdAcQ",
+      "category": "accessories",
+      "color": "Brown",
+      "brand": "LuxStyle",
+      "description": "A sophisticated Crepe Top with multiple compartments and an elegant design.",
+      "stock": 10,
+      "rating": 4.9,
+      "reviews": [
+        {
+          "user": "Ava Smith",
+          "comment": "High-quality leather and a classic look. Worth the price!",
+          "rating": 5
+        }
+      ],
+      "materials": ["Genuine Leather"],
+      "care_instructions": "Wipe clean with a damp cloth."
+    },
+    {
+        "id": 5,
+        "name": "Floral Maxi Dress",
+        "price": 1499,
+        "discount": 10,
+        "final_price": 1349,
+        "image": "https://images.meesho.com/images/products/218460447/fvpar_1200.jpg",
+        "category": "dresses",
+        "size": ["S", "M", "L", "XL"],
+        "color": "Multicolor",
+        "brand": "Fashionista",
+        "description": "A flowy floral maxi dress with a flattering neckline, perfect for summer events.",
+        "stock": 25,
+        "rating": 4.5,
+        "reviews": [
+          {
+            "user": "Jane Doe",
+            "comment": "Beautiful dress! The fabric is soft, and it fits perfectly.",
+            "rating": 5
+          },
+          {
+            "user": "Emily White",
+            "comment": "Loved the design but the color was slightly different from the picture.",
+            "rating": 4
+          }
+        ],
+        "materials": ["Cotton", "Polyester"],
+        "care_instructions": "Machine wash cold with like colors."
+      },
+      {
+        "id": 6,
+        "name": "Denim Jacket",
+        "price": 2199,
+        "discount": 15,
+        "final_price": 1869,
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRrrDNGGk73Te6u9TVSX-F-w9cV2nOOlpu87--bMTFUJ4arOCC-smlOjA9yAt83AgQJJkEMnauxoZ9WOZWeGz7qUgY1oOjkcQ-03t6jzGBw1HtEdXtEnwk6uz8",
+        "category": "jackets",
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "color": "Blue",
+        "brand": "Trendsetter",
+        "description": "A versatile denim jacket that adds a trendy edge to any outfit.",
+        "stock": 15,
+        "rating": 4.8,
+        "reviews": [
+          {
+            "user": "Sophia Brown",
+            "comment": "Great jacket! It’s my go-to for casual wear.",
+            "rating": 5
+          }
+        ],
+        "materials": ["Denim", "Cotton"],
+        "care_instructions": "Dry clean only."
+      },
+      {
+        "id": 7,
+        "name": "Trending Loosy Jeans",
+        "price": 1299,
+        "discount": 20,
+        "final_price": 1039,
+        "image": "https://images.meesho.com/images/products/313719770/6dqxg_1200.jpg",
+        "category": "jeans",
+        "size": ["28", "30", "32", "34", "36"],
+        "color": "Dark Blue",
+        "brand": "Denim Co.",
+        "description": "Trendy high-waisted skinny jeans that hug your body for a sleek look.",
+        "stock": 40,
+        "rating": 4.3,
+        "reviews": [
+          {
+            "user": "Maria Green",
+            "comment": "Fits really well! Great value for money.",
+            "rating": 4
+          },
+          {
+            "user": "Lily Johnson",
+            "comment": "Comfortable jeans but they run a little small.",
+            "rating": 3.5
+          }
+        ],
+        "materials": ["Denim", "Spandex"],
+        "care_instructions": "Machine wash warm, tumble dry low."
+      },
+      {
+        "id": 8,
+        "name": "Crepe Top",
+        "price": 3299,
+        "discount": 5,
+        "final_price": 3134,
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSWpClTx2a2nXWz8cOEHCqTbfKzVE7uvdFh5F9ydz2o7Mmbn5jRm7Rd-NqOsG3CtSSgYR7vW-RUutRyF4rJusUrtl_5fBjJtvGcz0C6t1ZX2iRIR_xjrUdAcQ",
+        "category": "accessories",
+        "color": "Brown",
+        "brand": "LuxStyle",
+        "description": "A sophisticated Crepe Top with multiple compartments and an elegant design.",
+        "stock": 10,
+        "rating": 4.9,
+        "reviews": [
+          {
+            "user": "Ava Smith",
+            "comment": "High-quality leather and a classic look. Worth the price!",
+            "rating": 5
+          }
+        ],
+        "materials": ["Genuine Leather"],
+        "care_instructions": "Wipe clean with a damp cloth."
+      }
+  ]
+  
