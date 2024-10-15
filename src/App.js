@@ -26,6 +26,10 @@ function App() {
                     element={<RouteWrapper component={HomePage} layout={CommonLayout} />} 
                   />
                   <Route 
+                    path="/eigo_shoppingweb" 
+                    element={<RouteWrapper component={HomePage} layout={CommonLayout} />} 
+                  />
+                  <Route 
                     path="/checkout" 
                     element={<RouteWrapper component={CheckoutPage} layout={CommonLayout} isPrivate />} 
                   />
