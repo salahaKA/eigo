@@ -35,7 +35,7 @@ const Header = (props) => {
             <img
               className="logo"
               
-              src={`${process.env.PUBLIC_URL}/eigo.jpg`}
+              src={`${process.env.PUBLIC_URL}/eigoNew.png`}
               alt="Eigo Brand Logo"
             />
           </Link>
