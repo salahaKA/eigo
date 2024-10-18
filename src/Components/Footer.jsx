@@ -27,10 +27,11 @@ const Footer = () => {
         </a>
       </p>
       <p>
-        &copy; {currentYear} <strong>Eigo</strong> - Online Shopping Store - Designed by Kadeejath Salaha <a href="https://www.instagram.com/code_study4/" target="_blank">
+        &copy; {currentYear} <strong>Eigo</strong> - Online Shopping Store - Designed by Kadeejath Salaha 
+        {/* <a href="https://www.instagram.com/code_study4/" target="_blank">
       <FontAwesomeIcon icon={faInstagram} /> Instagram
-        </a>
-        <span> / </span>
+        </a> */}
+        {/* <span> / </span> */}
         {/* <a
           href="https://github.com/salahaKA/eigo_shoppingweb.git"
           target="_blank"
