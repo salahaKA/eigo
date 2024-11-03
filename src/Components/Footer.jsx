@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <p className="footer-links">
-      <a href="https://www.instagram.com/eigo_shopping/" target="_blank">
+      <a href="https://www.instagram.com/eigoshopping/" target="_blank">
       <FontAwesomeIcon icon={faInstagram} /> Instagram
         </a>
         
@@ -22,7 +22,7 @@ const Footer = () => {
         
         
         <span> / </span>
-        <a href="https://www.instagram.com/eigo_shopping/" target="_blank">
+        <a href="https://www.instagram.com/eigoshopping/" target="_blank">
         <FontAwesomeIcon icon={faBlogger} /> Read My Blog
         </a>
       </p>
@@ -33,7 +33,7 @@ const Footer = () => {
         </a> */}
         {/* <span> / </span> */}
         {/* <a
-          href="https://github.com/salahaKA/eigo_shoppingweb.git"
+          href="https://github.com/salahaKA/eigoshoppingweb.git"
           target="_blank"
         >
           <FontAwesomeIcon icon={faGithub} /> View Source on Github
