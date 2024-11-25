@@ -265,6 +265,7 @@ const Checkout = () => {
           {step === CHECKOUT_STEPS.SHIPPING && <AddressStep />}
           {step === CHECKOUT_STEPS.PAYMENT && <PaymentStep />}
         </div>
+
         <div className="order-summary">
           <h2>
             Summary
@@ -292,7 +293,36 @@ const Checkout = () => {
             })}
           </ul>
 
-          <ul className="total-breakup">
+            {/* Calculate totals */}
+  {(() => {
+    const subtotal = items.reduce((acc, product) => acc + product.price * product.quantity, 0);
+    const taxRate = 0.18; // Example: 18% tax
+    const tax = subtotal * taxRate;
+    const shipping = subtotal > 5000 ? 0 : 200; // Free shipping for orders above ₹5000
+    const total = subtotal + tax + shipping;
+
+    return (
+      <ul className="total-breakup">
+        <li>
+          <p>Subtotal</p>
+          <p>{`₹${subtotal.toFixed(2)}`}</p>
+        </li>
+        <li>
+          <p>Tax (18%)</p>
+          <p>{`₹${tax.toFixed(2)}`}</p>
+        </li>
+        <li>
+          <p>Shipping</p>
+          <p>{`₹${shipping.toFixed(2)}`}</p>
+        </li>
+        <li>
+          <h2>Total</h2>
+          <h2>{`₹${total.toFixed(2)}`}</h2>
+        </li>
+      </ul>
+    );
+  })()}
+          {/* <ul className="total-breakup">
             <li>
               <p>Subtotal</p>
               <p>5000</p>
@@ -309,7 +339,7 @@ const Checkout = () => {
               <h2>Total</h2>
               <h2>5000</h2>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </div>
