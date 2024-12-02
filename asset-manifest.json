@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/eigo_shoppingweb/static/css/main.28984cb5.css",
-    "main.js": "/eigo_shoppingweb/static/js/main.24da62c2.js",
+    "main.css": "/eigo_shoppingweb/static/css/main.78d447bc.css",
+    "main.js": "/eigo_shoppingweb/static/js/main.e4c8f93c.js",
     "static/js/453.fc6b36b4.chunk.js": "/eigo_shoppingweb/static/js/453.fc6b36b4.chunk.js",
     "static/media/rsc.svg?fxihkr": "/eigo_shoppingweb/static/media/rsc.b43c52315c8267e999ed.svg",
     "static/media/rsc.woff?fxihkr": "/eigo_shoppingweb/static/media/rsc.4e43a00fdbe3faa9e05b.woff",
     "static/media/rsc.ttf?fxihkr": "/eigo_shoppingweb/static/media/rsc.a6e421b3dfa08e28c8da.ttf",
     "index.html": "/eigo_shoppingweb/index.html",
-    "main.28984cb5.css.map": "/eigo_shoppingweb/static/css/main.28984cb5.css.map",
-    "main.24da62c2.js.map": "/eigo_shoppingweb/static/js/main.24da62c2.js.map",
+    "main.78d447bc.css.map": "/eigo_shoppingweb/static/css/main.78d447bc.css.map",
+    "main.e4c8f93c.js.map": "/eigo_shoppingweb/static/js/main.e4c8f93c.js.map",
     "453.fc6b36b4.chunk.js.map": "/eigo_shoppingweb/static/js/453.fc6b36b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28984cb5.css",
-    "static/js/main.24da62c2.js"
+    "static/css/main.78d447bc.css",
+    "static/js/main.e4c8f93c.js"
   ]
 }
