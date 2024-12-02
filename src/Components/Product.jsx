@@ -1,9 +1,11 @@
 import React, { useState, useContext } from "react";
 import { CartDispatchContext, addToCart } from "../Contexts/cart";
+import { useNavigate } from "react-router-dom";
 
 const ProductCard = ({ data }) => {
   const [isAdded, setIsAdded] = useState(false);
   const dispatch = useContext(CartDispatchContext);
+  const navigate = useNavigate();
   const { image, name, price, id, stock } = data;
 
   const handleAddToCart = () => {
@@ -29,6 +31,12 @@ const ProductCard = ({ data }) => {
           onClick={handleAddToCart}
         >
           {!isAdded ? "ADD TO CART" : "✔ ADDED"}
+        </button>
+        <button
+          className="product-view"
+          onClick={() => navigate(`/product/${id}`)} // Use id from data
+        >
+          View Product
         </button>
       </div>
     </div>

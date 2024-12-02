@@ -6,10 +6,14 @@ import {
   CheckoutDispatchContext,
   CHECKOUT_STEPS,
   setCheckoutStep,
-  saveShippingAddress
+  saveShippingAddress,
 } from "../Contexts/checkout";
 import { CartStateContext } from "../Contexts/cart";
-import { AuthStateContext, AuthDispatchContext, signOut } from "../Contexts/auth";
+import {
+  AuthStateContext,
+  AuthDispatchContext,
+  signOut,
+} from "../Contexts/auth";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import _get from "lodash.get";
@@ -27,7 +31,7 @@ const AddressSchema = Yup.object().shape({
   city: Yup.string().required("City is required!"),
   state: Yup.string().required("State is required!"),
   code: Yup.string().required("ZIP/Postal code is required!"),
-  country: Yup.string().required("Country is required!")
+  country: Yup.string().required("Country is required!"),
 });
 
 const LoginStep = () => {
@@ -101,7 +105,7 @@ const AddressStep = () => {
           city: "Kingston",
           state: "New York",
           code: "12401",
-          country: "United States"
+          country: "United States",
         }}
         validationSchema={AddressSchema}
         onSubmit={async (values, { resetForm }) => {
@@ -233,7 +237,7 @@ const Checkout = () => {
             <li
               className={classNames({
                 done: isLoggedIn,
-                active: step === CHECKOUT_STEPS.AUTH
+                active: step === CHECKOUT_STEPS.AUTH,
               })}
               onClick={() => handleClickTimeline(CHECKOUT_STEPS.AUTH)}
             >
@@ -243,7 +247,7 @@ const Checkout = () => {
             <li
               className={classNames({
                 done: shippingAddress !== null,
-                active: step === CHECKOUT_STEPS.SHIPPING
+                active: step === CHECKOUT_STEPS.SHIPPING,
               })}
               onClick={() => handleClickTimeline(CHECKOUT_STEPS.SHIPPING)}
             >
@@ -253,7 +257,7 @@ const Checkout = () => {
             <li
               className={classNames({
                 done: false,
-                active: step === CHECKOUT_STEPS.PAYMENT
+                active: step === CHECKOUT_STEPS.PAYMENT,
               })}
               onClick={() => handleClickTimeline(CHECKOUT_STEPS.PAYMENT)}
             >
@@ -293,35 +297,38 @@ const Checkout = () => {
             })}
           </ul>
 
-            {/* Calculate totals */}
-  {(() => {
-    const subtotal = items.reduce((acc, product) => acc + product.price * product.quantity, 0);
-    const taxRate = 0.18; // Example: 18% tax
-    const tax = subtotal * taxRate;
-    const shipping = subtotal > 5000 ? 0 : 200; // Free shipping for orders above ₹5000
-    const total = subtotal + tax + shipping;
+          {/* Calculate totals */}
+          {(() => {
+            const subtotal = items.reduce(
+              (acc, product) => acc + product.price * product.quantity,
+              0
+            );
+            const taxRate = 0.18; // Example: 18% tax
+            const tax = subtotal * taxRate;
+            const shipping = subtotal > 5000 ? 0 : 200; // Free shipping for orders above ₹5000
+            const total = subtotal + tax + shipping;
 
-    return (
-      <ul className="total-breakup">
-        <li>
-          <p>Subtotal</p>
-          <p>{`₹${subtotal.toFixed(2)}`}</p>
-        </li>
-        <li>
-          <p>Tax (18%)</p>
-          <p>{`₹${tax.toFixed(2)}`}</p>
-        </li>
-        <li>
-          <p>Shipping</p>
-          <p>{`₹${shipping.toFixed(2)}`}</p>
-        </li>
-        <li>
-          <h2>Total</h2>
-          <h2>{`₹${total.toFixed(2)}`}</h2>
-        </li>
-      </ul>
-    );
-  })()}
+            return (
+              <ul className="total-breakup">
+                <li>
+                  <p>Subtotal</p>
+                  <p>{`₹${subtotal.toFixed(2)}`}</p>
+                </li>
+                <li>
+                  <p>Tax (18%)</p>
+                  <p>{`₹${tax.toFixed(2)}`}</p>
+                </li>
+                <li>
+                  <p>Shipping</p>
+                  <p>{`₹${shipping.toFixed(2)}`}</p>
+                </li>
+                <li>
+                  <h2>Total</h2>
+                  <h2>{`₹${total.toFixed(2)}`}</h2>
+                </li>
+              </ul>
+            );
+          })()}
           {/* <ul className="total-breakup">
             <li>
               <p>Subtotal</p>

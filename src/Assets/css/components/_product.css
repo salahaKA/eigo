@@ -47,10 +47,14 @@
 }
 .product .product-action {
   padding: 16px;
+  
+  gap: 8px; /* Add space between buttons */
 }
 .product .product-action button {
   width: 100%;
   transition: all 300ms ease-in;
+  margin-bottom: 8px; /* Add space below each button */
+
 }
 .product .product-action button.added {
   background: orange; /* Replace $primary-orange with the actual value */

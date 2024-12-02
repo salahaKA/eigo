@@ -12,6 +12,8 @@ import AuthPage from "./Pages/auth";
 import HomePage from "./Pages/home";
 import CheckoutPage from "./Pages/checkout";
 import "./Assets/css/style.css"
+import ProductView from './Components/ProductView';
+
 function App() {
   return (
     <AuthProvider>
@@ -37,6 +39,7 @@ function App() {
                     path="/auth" 
                     element={<RouteWrapper component={AuthPage} layout={AuthLayout} />} 
                   />
+                  <Route path="/product/:productId" element={<ProductView />} />
                 </Routes>
               </Router>
             </CheckoutProvider>

@@ -5,7 +5,7 @@ import {
   CartStateContext,
   CartDispatchContext,
   removeFromCart,
-  toggleCartPopup
+  toggleCartPopup,
 } from "../Contexts/cart";
 
 const CartPreview = () => {
@@ -47,6 +47,7 @@ const CartPreview = () => {
               >
                 ×
               </button>
+              
             </li>
           );
         })}
