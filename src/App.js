@@ -39,7 +39,8 @@ function App() {
                     path="/auth" 
                     element={<RouteWrapper component={AuthPage} layout={AuthLayout} />} 
                   />
-                  <Route path="/product/:productId" element={<ProductView />} />
+                  {/* <Route path="/product/:productId" element={<ProductView />} /> */}
+                  <Route path="/product/:id" element={<ProductView />} />
                 </Routes>
               </Router>
             </CheckoutProvider>

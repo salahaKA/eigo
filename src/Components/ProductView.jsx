@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import "./ProductView.css"
@@ -31,3 +32,59 @@ function ProductView() {
 }
 
 export default ProductView
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useEffect, useContext } from "react";
+// import {
+//   ProductsStateContext,
+//   ProductsDispatchContext,
+//   getProducts
+// } from "../Contexts/products";
+
+
+// const ProductView = () => {
+//   const dispatch = useContext(ProductsDispatchContext);
+//   const { products, isLoading, isLoaded } = useContext(ProductsStateContext);
+
+//   useEffect(() => {
+//     getProducts(dispatch);
+//   }, [dispatch]);
+
+//   if (isLoading) return <p>Loading...</p>;
+//   if (!isLoaded) return <p>Failed to load products.</p>;
+
+//   return (
+//     <div>
+//       {products &&
+//         products.map((product) => (
+//           <div key={product.id}>
+//             <h3>{product.name}</h3>
+//             <p>{product.description}</p>
+//           </div>
+//         ))}
+//     </div>
+//   );
+// };
+
+// export default ProductView;
