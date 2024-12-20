@@ -6,11 +6,11 @@ function ProductView() {
     const { productId } = useParams(); // Get product ID from URL
     // Dummy product data for demonstration
   const product = {
-    image: "https://via.placeholder.com/300", // Replace with actual image URL
-    name: "Sample Product",
-    description: "This is a detailed description of the product.",
-    price: 499.99,
-    stock: 10,
+    // image: "https://via.placeholder.com/300", // Replace with actual image URL
+    // name: "Sample Product",
+    // description: "This is a detailed description of the product.",
+    // price: 499.99,
+    // stock: 10,
   };
 
   return (
