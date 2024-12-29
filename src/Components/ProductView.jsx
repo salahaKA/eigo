@@ -39,7 +39,7 @@ function ProductView() {
           <p className={`productt-stock ${product.stock > 0 ? "in-stock" : "out-of-stock"}`}>
             {product.stock > 0 ? "In Stock" : "Out of Stock"}
           </p>
-          <button className="addd-to-cart">Add to Cart</button>
+          {/* <button className="addd-to-cart">Add to Cart</button> */}
         </div>
       </div>
     </div>
