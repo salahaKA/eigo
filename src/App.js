@@ -21,7 +21,7 @@ function App() {
         <ProductsProvider>
           <CartProvider>
             <CheckoutProvider>
-              <Router>
+              <Router basename="/eigo_shoppingweb">
                 <Routes>
                   <Route 
                     path="/" 
