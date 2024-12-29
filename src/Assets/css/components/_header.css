@@ -1,6 +1,6 @@
-
 header {
-  background: #ffffff; /* Replace $white with the actual color code */
+  background: #ffffff;
+  /* Replace $white with the actual color code */
   padding: 30px 32px;
   box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.033);
   position: fixed;
@@ -39,6 +39,7 @@ header .container {
     transform: translateY(30px);
     opacity: 0.5;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -51,7 +52,7 @@ header .container {
   height: 90px;
   padding-left: 0px;
   padding-top: 0px;
-  
+
 }
 
 @media (max-width: 480px) {
@@ -103,7 +104,8 @@ header .container {
 
 .search-keyword {
   height: 36px;
-  border: 1px solid #93860d; /* Replace $primary-green with the actual color code */
+  border: 1px solid #93860d;
+  /* Replace $primary-green with the actual color code */
   padding: 0 16px;
   border-radius: 2px 0 0 2px;
   width: 100%;
@@ -123,7 +125,8 @@ header .container {
 
 .search-button {
   border-radius: 0 2px 2px 0;
-  background: #93860d url(https://res.cloudinary.com/sivadass/image/upload/v1494692031/icons/search.png) center no-repeat; /* Replace $primary-green */
+  background: #93860d url(https://res.cloudinary.com/sivadass/image/upload/v1494692031/icons/search.png) center no-repeat;
+  /* Replace $primary-green */
   width: 96px;
 }
 
@@ -135,6 +138,7 @@ header .container {
 }
 
 @media (min-width: 481px) {
+
   .mobile-search,
   .back-button {
     display: none;
@@ -178,7 +182,8 @@ header .container {
 
 .cart-info table {
   font-size: 14px;
-  color: #93860d; /* Replace $primary-green */
+  color: #93860d;
+  /* Replace $primary-green */
   text-align: right;
 }
 
@@ -210,7 +215,8 @@ header .container {
   .cart-count {
     display: block;
     position: absolute;
-    background: #ff6f00; /* Replace $primary-orange */
+    background: #93860d;
+    /* Replace $primary-orange */
     height: 24px;
     line-height: 24px;
     text-align: center;
@@ -225,8 +231,10 @@ header .container {
 
 .cart-preview {
   display: none;
-  background: #ffffff; /* Replace $white */
-  border: 1px solid #e0e0e0; /* Replace $gray-eighty */
+  background: #ffffff;
+  /* Replace $white */
+  border: 1px solid #e0e0e0;
+  /* Replace $gray-eighty */
 }
 
 .cart-preview:before {
@@ -239,7 +247,8 @@ header .container {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-bottom: 8px solid #e0e0e0; /* Replace $gray-eighty */
+  border-bottom: 8px solid #e0e0e0;
+  /* Replace $gray-eighty */
   z-index: 1;
 }
 
@@ -253,7 +262,8 @@ header .container {
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-bottom: 7px solid #ffffff; /* Replace $white */
+  border-bottom: 7px solid #ffffff;
+  /* Replace $white */
   z-index: 1;
 }
 
@@ -277,7 +287,8 @@ header .container {
 }
 
 .action-block {
-  background: #ffffff; /* Replace $white */
+  background: #ffffff;
+  /* Replace $white */
   position: absolute;
   bottom: 0;
   padding: 16px;
@@ -285,7 +296,8 @@ header .container {
 }
 
 .action-block button {
-  background: #ff0022; /* Replace $primary-orange */
+  background: #ff0022;
+  /* Replace $primary-orange */
   display: block;
   width: 100%;
 }
@@ -306,7 +318,8 @@ header .container {
 }
 
 .empty-cart h2 {
-  color: #bdbdbd; /* Replace $gray-light */
+  color: #bdbdbd;
+  /* Replace $gray-light */
   font-size: 18px;
 }
 
@@ -345,12 +358,14 @@ header .container {
 }
 
 .product-name {
-  color: #b0b0b0; /* Replace $gray-light with actual color */
+  color: #b0b0b0;
+  /* Replace $gray-light with actual color */
   font-size: 14px;
 }
 
 .product-price {
-  color: #b0b0b0; /* Replace $gray-light with actual color */
+  color: #b0b0b0;
+  /* Replace $gray-light with actual color */
   font-weight: 700;
 }
 
@@ -363,13 +378,15 @@ header .container {
 }
 
 .quantity {
-  color: #b0b0b0; /* Replace $gray-light with actual color */
+  color: #b0b0b0;
+  /* Replace $gray-light with actual color */
   font-size: 14px;
   text-align: right;
 }
 
 .amount {
-  color: #333333; /* Replace $gray-dark with actual color */
+  color: #333333;
+  /* Replace $gray-dark with actual color */
   font-weight: 700;
   text-align: right;
 }
@@ -384,18 +401,22 @@ header .container {
   line-height: 24px;
   width: 24px;
   font-size: 22px;
-  color: #b0b0b0; /* Replace $gray-eighty with actual color */
-  background-color: #ffffff; /* Replace $white with actual color */
+  color: #b0b0b0;
+  /* Replace $gray-eighty with actual color */
+  background-color: #ffffff;
+  /* Replace $white with actual color */
   text-align: center;
   padding: 0;
 }
 
 .product-remove:hover {
-  color: #ff0000; /* Replace $red with actual color */
+  color: #ff0000;
+  /* Replace $red with actual color */
 }
 
 .cart-item:hover {
-  background: rgba(144, 238, 144, 0.2); /* Replace $green-light-bg with actual color */
+  background: rgba(144, 238, 144, 0.2);
+  /* Replace $green-light-bg with actual color */
 }
 
 @keyframes tada {
@@ -403,21 +424,25 @@ header .container {
     transform: scale3d(1, 1, 1);
     opacity: 0;
   }
+
   10%,
   20% {
     transform: scale3d(0.8, 0.66, 0.66) rotate3d(0, 0, 1, -3deg);
   }
+
   30%,
   50%,
   70%,
   90% {
     transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, 3deg);
   }
+
   40%,
   60%,
   80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
+
   to {
     transform: scale3d(1, 1, 1);
     opacity: 1;
@@ -431,15 +456,36 @@ header .container {
 }
 
 
+/* Logout btn css */
+.logout-button {
+  background-color: #93860d; /* Orange background */
+  color: #ffffff; /* White icon color */
+  border: none;
+  padding: 10px;
+  font-size: 24px; /* Increase the icon size */
+  border-radius: 50%; /* Circle the button */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 40px; /* Set width and height for the circular button */
+  height: 40px;
+}
 
+.logout-button i {
+  color: #ffffff; /* White icon color */
+}
 
+.logout-button:hover {
+  background-color: #f3f1f0; /* Darker shade on hover */
+  transform: scale(1.1); /* Slight scaling effect */
+}
 
+.logout-button:focus {
+  outline: none; /* Remove the focus outline */
+}
 
-
-
-
-
-
-
-
-
+.logout-button:active {
+  background-color: #cc5200; /* Even darker shade when clicked */
+}

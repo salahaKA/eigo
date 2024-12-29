@@ -13,6 +13,10 @@ import HomePage from "./Pages/home";
 import CheckoutPage from "./Pages/checkout";
 import "./Assets/css/style.css"
 import ProductView from './Components/ProductView';
+import Login from './Components/Login';
+import Register from './Components/Register';
+
+
 
 function App() {
   return (
@@ -41,6 +45,8 @@ function App() {
                   />
                   {/* <Route path="/product/:productId" element={<ProductView />} /> */}
                   <Route path="/product/:id" element={<ProductView />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/register" element={<Register />} />
                 </Routes>
               </Router>
             </CheckoutProvider>

@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
-import classNames from "classnames";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   CartStateContext,
   CartDispatchContext,
-  toggleCartPopup
+  toggleCartPopup,
 } from "../Contexts/cart";
 import { CommonDispatchContext, setSearchKeyword } from "../Contexts/common";
 import CartPreview from "../Components/CartPreview";
@@ -27,6 +26,12 @@ const Header = (props) => {
     return toggleCartPopup(cartDispatch);
   };
 
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    localStorage.removeItem("authToken");
+    navigate("/login");
+  };
+
   return (
     <header>
       <div className="container">
@@ -34,7 +39,6 @@ const Header = (props) => {
           <Link to="/">
             <img
               className="logo"
-              
               src={`${process.env.PUBLIC_URL}/eigoNew.png`}
               alt="Eigo Brand Logo"
             />
@@ -111,6 +115,16 @@ const Header = (props) => {
             )}
           </a>
           <CartPreview />
+        </div>
+
+        <div className="logout">
+          <button onClick={handleLogout} className="logout-button">
+            <i
+              className="fas fa-sign-out-alt"
+              style={{ color: "red", marginRight: "8px" }}
+            ></i>
+            
+          </button>
         </div>
       </div>
     </header>
