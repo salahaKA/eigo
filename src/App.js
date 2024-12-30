@@ -13,8 +13,8 @@ import HomePage from "./Pages/home";
 import CheckoutPage from "./Pages/checkout";
 import "./Assets/css/style.css"
 import ProductView from './Components/ProductView';
-import Login from './Components/Login/Login';
-import Register from './Components/Login/Register';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Login/Register';
 
 
 
