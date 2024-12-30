@@ -1,0 +1,72 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #808080; /* Gray background */
+  }
+  
+  .login-card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8e6d28; /* Gold color */
+    margin-top: 5px;
+  }
+  
+  .forgot-password {
+    margin-top: -10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .forgot-password a {
+    color: #8e6d28; /* Gold color */
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    margin-top: 20px;
+    background-color: #8e6d28; /* Gold button */
+    color: #fff;
+  }
+  
+  .login-button:hover {
+    background-color: #70591d; /* Darker gold on hover */
+  }
+  
+  .sign-up-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .sign-up-link a {
+    color: #1976d2; /* Blue color for Sign Up */
+    text-decoration: none;
+  }
+  
+  .sign-up-link a:hover {
+    text-decoration: underline;
+  }
+  
