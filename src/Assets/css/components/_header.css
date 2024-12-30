@@ -1,6 +1,5 @@
 header {
-  background: #ffffff;
-  /* Replace $white with the actual color code */
+  background: hsl(0, 0%, 100%);
   padding: 30px 32px;
   box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.033);
   position: fixed;
@@ -9,6 +8,7 @@ header {
   z-index: 100;
   animation: slideUp 300ms linear;
   max-width: 100%;
+  padding-bottom: 0px;
 }
 
 header .container {
@@ -49,8 +49,8 @@ header .container {
 
 /* Logo */
 .brand .logo {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   padding-left: 0px;
   padding-top: 0px;
 
@@ -459,19 +459,19 @@ header .container {
 
 /* Logout btn css */
 .logout-button {
-  background-color: #93860d; /* Orange background */
-  color: #ffffff; /* White icon color */
+  background-color: #ffffff; 
+  color: #ffffff; 
   border: none;
   padding: 10px;
-  font-size: 24px; /* Increase the icon size */
-  border-radius: 50%; /* Circle the button */
+  font-size: 24px; 
+  border-radius: 50%; 
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  width: 40px; /* Set width and height for the circular button */
-  height: 40px;
+  width: 50px; /* Set width and height for the circular button */
+  height: 50px;
 }
 
 .logout-button i {
@@ -479,8 +479,8 @@ header .container {
 }
 
 .logout-button:hover {
-  background-color: #f3f1f0; /* Darker shade on hover */
-  transform: scale(1.1); /* Slight scaling effect */
+  background-color: #f3f1f0; 
+  transform: scale(1.1); 
 }
 
 .logout-button:focus {
@@ -488,5 +488,5 @@ header .container {
 }
 
 .logout-button:active {
-  background-color: #cc5200; /* Even darker shade when clicked */
+  background-color: #cc1800; /* Even darker shade when clicked */
 }

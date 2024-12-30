@@ -6,6 +6,8 @@ import {
   getProducts
 } from "../Contexts/products";
 import { CommonStateContext } from "../Contexts/common";
+import ScrollCategory from "../Components/ScrollCategory";
+
 
 const Home = () => {
   const { products, isLoading, isLoaded } = useContext(ProductsStateContext);
@@ -34,6 +36,7 @@ const Home = () => {
   }
   return (
     <div className="products-wrapper">
+      <ScrollCategory />
       <div className="products">
         {isLoaded &&
           productsList.map((data) => {
