@@ -490,3 +490,44 @@ header .container {
 .logout-button:active {
   background-color: #cc1800; /* Even darker shade when clicked */
 }
+
+
+/* Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light-header {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.theme-toggle-button {
+  background-color: #f0f0f0;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-header {
+  background-color: #333333;
+  color: #fff;
+}
+
+.theme-toggle-button {
+  background-color: #555555;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

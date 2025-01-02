@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
   CartStateContext,
@@ -17,6 +17,8 @@ const Header = (props) => {
     .map((item) => item.price * item.quantity)
     .reduce((prev, current) => prev + current, 0);
 
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
   const handleSearchInput = (event) => {
     return setSearchKeyword(commonDispatch, event.target.value);
   };
@@ -26,6 +28,11 @@ const Header = (props) => {
     return toggleCartPopup(cartDispatch);
   };
 
+  const toggleTheme = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+    document.body.className = isDarkMode ? "light-mode" : "dark-mode"; // Update body class
+  };
+
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("authToken");
@@ -33,7 +40,7 @@ const Header = (props) => {
   };
 
   return (
-    <header>
+    <header className={`header ${isDarkMode ? "dark-header" : "light-header"}`}>
       <div className="container">
         <div className="brand">
           <Link to="/">
@@ -43,6 +50,12 @@ const Header = (props) => {
               alt="Eigo Brand Logo"
             />
           </Link>
+        </div>
+
+        <div className="theme-toggler">
+          <button onClick={toggleTheme} className="theme-toggle-button">
+            {isDarkMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
+          </button>
         </div>
 
         <div className="search">
